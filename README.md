@@ -23,6 +23,22 @@ Personal-stock-gui 是一個結合大型語言模型 (LLM) 與先進時間序列
 5. **自動化技術分析報告 (TA Reports)**
    - 整合即時市場數據與模型預測結果，系統能自動生成並儲存 Markdown 格式的完整技術分析報告。
 
+## 整合的 GitHub 開源專案
+
+本專案高度整合了以下三個強大的核心開源專案，作為系統底層的預測與分析引擎。詳細的專案架構與原始碼說明，請參閱各專案專屬的 README 檔案：
+
+1. **TradingAgents (多智能體交易辯論框架)**
+   - 負責處理多個虛擬分析師 (LLM) 之間的辯論流程與最終投資決策。
+   - 📖 [請參閱 TradingAgents README](./TradingAgents/README.md)
+
+2. **Kronos (進階時間序列預測模型)**
+   - 專門用於量化分析與精準預測股票未來趨勢及信心分數。
+   - 📖 [請參閱 Kronos README](./kronos/README.md)
+
+3. **TimesFM (時間序列基礎模型)**
+   - 作為另一個平行的預測引擎，提供市場趨勢的基準數據並與 Kronos 進行交叉驗證。
+   - 📖 [請參閱 TimesFM 官方 README](https://github.com/google-research/timesfm)
+
 ## 系統架構與目錄說明
 
 - `ui/`：圖形化介面的核心程式碼，包含主視窗 (`main_window.py`)、側邊欄 (`sidebar.py`) 以及各個功能頁面 (如 `dashboard.py`、`stock_analysis.py` 等)。
