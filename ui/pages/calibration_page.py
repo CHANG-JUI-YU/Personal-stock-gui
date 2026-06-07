@@ -42,7 +42,7 @@ class CalibrationPage(QWidget):
         layout.setContentsMargins(16, 16, 16, 16)
 
         # 標題
-        header = QLabel("模型校準分析 (Model Calibration Analysis)")
+        header = QLabel("Model Calibration Analysis")
         header.setStyleSheet(
             f"font-size: 24px; font-weight: bold; color: {DARK_TEXT};"
         )

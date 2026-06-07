@@ -300,6 +300,13 @@ class MiroFishSimPage(QWidget):
         out.append(f"Action: {action}")
         out.append(f"Confidence: {conf:.2f}")
         out.append("")
+
+        # Display the Portfolio Manager reasoning
+        reports = result.get('reports', {})
+        pm_reasoning = reports.get('Portfolio Manager', {}).get('reasoning', '')
+        if pm_reasoning:
+            out.append(f"Portfolio Manager Reasoning:\n{pm_reasoning}")
+            out.append("")
         
         reports = result.get('reports', {})
         if reports:
