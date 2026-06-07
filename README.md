@@ -81,7 +81,6 @@ pip install -r requirements.txt
 # 範例：使用 DeepSeek 作為模型提供者
 DEEPSEEK_API_KEY=your_deepseek_api_key_here
 ```
-請注意，`.env` 檔案已被加入 `.gitignore`，**絕對不會**被推送到 GitHub 上，你的金鑰將安全地保留在本地端。
 
 ## 使用教學與介面導覽
 
