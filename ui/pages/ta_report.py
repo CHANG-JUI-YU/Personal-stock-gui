@@ -31,6 +31,7 @@ class TAReportPage(QWidget):
         top_layout = QHBoxLayout()
         self.ticker_input = QComboBox()
         self.ticker_input.setEditable(True)
+        self.ticker_input.setMinimumWidth(150)
         self.ticker_input.setStyleSheet("padding: 8px; font-size: 14px; border: 1px solid #BDC3C7; border-radius: 4px;")
         
         self.interval_combo = QComboBox()
